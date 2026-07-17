@@ -4,7 +4,6 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jayyoung14/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:jaaayzer14@gmail.com)
-[![Open to Work](https://img.shields.io/badge/Open%20to%20Work-Hybrid%20%7C%20Remote-brightgreen?style=flat-square)](https://www.linkedin.com/in/jayyoung14/)
 
 </div>
 
