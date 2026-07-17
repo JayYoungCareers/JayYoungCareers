@@ -13,8 +13,6 @@
 
 I'm a Senior Data Privacy and GRC professional with 4+ years of hands-on experience designing and operating compliance programs at enterprise scale. My focus is on Microsoft Purview, cloud security engineering, and translating regulatory requirements into automated, scalable controls across Azure and Microsoft 365 environments.
 
-Currently at **Ally Financial** — one of the nation's largest digital financial services companies — where I lead data privacy strategy and operations. Previously, I built GRC and data governance programs at **United Wholesale Mortgage**, supporting compliance across one of the country's highest-volume mortgage lenders and 8,000+ employees.
-
 I approach security and privacy as an engineering discipline: policy should be code, controls should be auditable, and compliance programs should scale without scaling headcount.
 
 ---
