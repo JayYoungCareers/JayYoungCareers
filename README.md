@@ -1,111 +1,72 @@
 # Jay Young
 
-### Senior Data Privacy & GRC Engineer · Cloud Security · Microsoft Purview
+**GRC Privacy Technical Implementor** · Privacy Engineering · Policy-as-Code · Cloud Data Protection
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jayyoung14/)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:jaaayzer14@gmail.com)
+I turn privacy and regulatory requirements into technical controls that actually run — and into evidence that proves they ran. Four years across financial services and mortgage, currently at Ally Financial, building the layer between what Legal and Privacy commit to and what infrastructure enforces.
 
-</div>
-
----
-
-## About
-
-I'm a Senior Data Privacy and GRC professional with 4+ years of hands-on experience designing and operating compliance programs at enterprise scale. My focus is on Microsoft Purview, cloud security engineering, and translating regulatory requirements into automated, scalable controls across Azure and Microsoft 365 environments.
-
-I approach security and privacy as an engineering discipline: policy should be code, controls should be auditable, and compliance programs should scale without scaling headcount.
+> Policy should be code, controls should be auditable, and compliance should scale without scaling headcount.
 
 ---
 
-## Areas of Expertise
+## What I implement
 
-| Domain | Capabilities |
-|--------|--------------|
-| **Microsoft Purview & M365 Compliance** | Information Protection, DLP, Compliance Manager, Data Lifecycle Management, Sensitivity Labels |
-| **Cloud Security** | Azure Security, GCP, IAM, Cloud Architecture Review, Security Posture Management |
-| **GRC Engineering** | Risk Frameworks, Compliance Automation, Control Design, Audit Readiness |
-| **Data Privacy** | CCPA, GLBA, DPIA/PIA, Privacy Operations, OneTrust, Privacy Program Management |
-| **Data Governance** | Data Classification, Lineage Mapping, Asset Inventories, Informatica, Snowflake |
-| **Compliance as Code** | Terraform, PowerShell, GitHub Actions, CI/CD Pipelines, Infrastructure Automation |
+**Data protection controls** — classification, masking, and access enforcement deployed as infrastructure rather than configured by hand. At UWM I shipped data masking and classification controls into GCP through Terraform; at Ally I work the privacy strategy and operations side of the same problem.
 
----
+**Policy-as-code** — control requirements encoded as Rego and enforced by a fail-closed CI gate, so a non-compliant plan cannot merge. Control IDs live next to the resources they govern, where they can't drift silently.
 
-## Tech Stack
+**Compliance evidence pipelines** — Terraform runs captured, hashed, signed, and written to immutable (WORM) storage, so the answer to "prove this control was enforced on this date" is a versioned artifact, not a screenshot.
 
-**Cloud & Security Platforms**
-
-![Azure](https://img.shields.io/badge/Microsoft%20Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![Microsoft 365](https://img.shields.io/badge/Microsoft%20365-D83B01?style=flat-square&logo=microsoft&logoColor=white)
-![Microsoft Purview](https://img.shields.io/badge/Microsoft%20Purview-0078D4?style=flat-square&logo=microsoft&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
-
-**Languages & Automation**
-
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white)
-![HCL](https://img.shields.io/badge/HCL-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-
-**GRC & Data Platforms**
-
-![OneTrust](https://img.shields.io/badge/OneTrust-3EC28F?style=flat-square&logoColor=white)
-![ServiceNow](https://img.shields.io/badge/ServiceNow-62D84E?style=flat-square&logo=servicenow&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
-![Informatica](https://img.shields.io/badge/Informatica-FF4D00?style=flat-square&logoColor=white)
-![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=flat-square&logo=snowflake&logoColor=white)
-![Azure SQL](https://img.shields.io/badge/Azure%20SQL-CC2927?style=flat-square&logo=microsoftazure&logoColor=white)
+**Privacy program operations** — DPIA/PIA workflows, data inventory and lineage, retention and sharing standards, regulatory mapping across CCPA/CPRA, GLBA, and GDPR.
 
 ---
 
-## Certifications
+## Featured work
 
-- 🏅 **Google Cloud Professional Cloud Security Engineer** — Google Cloud
-- 📋 *Additional certifications listed on [LinkedIn](https://www.linkedin.com/in/jayyoung14/)*
+### [`cgep-labs`](https://github.com/JayYoungCareers/cgep-labs) — Compliance controls as code
+NIST 800-53 controls (SC-28, AC-3, CM-6) implemented as Terraform primitives and reusable modules, enforced by Rego policies across **both AWS and GCP**, and gated in CI by Conftest. Includes an S3 Object Lock evidence vault with a capture-and-verify pipeline. Every control ID maps to a specific policy file and a passing test.
 
----
-
-## Featured Project
-
-### [`m365-compliance-as-code`](https://github.com/JayYoungCareers/m365-compliance-as-code)
-
-> Infrastructure-as-code framework for deploying and managing Microsoft 365 compliance policies across dev and prod environments via Terraform and GitHub Actions CI/CD.
-
-`Terraform` · `HCL` · `GitHub Actions` · `Microsoft Purview` · `M365 Compliance` · `CI/CD`
+### `m365-compliance-as-code` — Microsoft Purview & M365 compliance, deployed as IaC
+Terraform and GitHub Actions framework for deploying Microsoft 365 compliance policies — sensitivity labels, DLP, and retention — as version-controlled, reviewable code instead of portal clicks.
 
 ---
 
-## Regulatory Frameworks
+## Tech
 
-`NIST CSF` · `NIST Privacy Framework` · `CMMC` · `GLBA` · `CCPA` · `NIST 800-53` · `SOC 2`
-
----
-
-## Currently Focused On
-
-- 🔐 Deepening Microsoft Purview capabilities — Information Protection, Insider Risk Management, and eDiscovery
-- ☁️ Azure Security architecture and compliance automation at enterprise scale
-- 🏗️ Building reproducible, policy-as-code compliance frameworks for cloud environments
+**Policy & IaC** — Terraform · Rego / OPA · Conftest · Checkov · GitHub Actions · PowerShell · Python · Bash
+**Cloud** — AWS · Google Cloud · Azure
+**Privacy & governance** — Microsoft Purview (Information Protection, DLP, Compliance Manager) · Informatica CDGC · OneTrust · ServiceNow
+**Data** — SQL · Snowflake · Power BI
+**Frameworks** — NIST 800-53 rev5 · CCPA/CPRA · GLBA · GDPR · DPIA/PIA
 
 ---
 
-## Professional Background
+## Experience
 
-```
-Senior Analyst, Data Privacy Strategy & Operations  │  Ally Financial         │  2025 – Present
-IT GRC Administrator – Data Governance               │  United Wholesale Mortgage │  2022 – 2025
-Cybersecurity Compliance Analyst                     │  LucidCoast             │  2022
-```
+**Senior Analyst, Data Privacy & Strategy Operations** — Ally Financial, Detroit, MI · *June 2025 – Present*
 
-Northern Michigan University — B.S. Cybersecurity · Information Assurance · Business Analytics
+**IT Governance, Risk & Compliance Analyst, Data Governance** — United Wholesale Mortgage, Pontiac, MI · *Sept 2022 – June 2025*
+Deployed data masking and classification controls in GCP via Terraform.
+
+**Cybersecurity Compliance Analyst** — Lucidcoast, Marquette, MI · *Jan 2022 – Sept 2022*
+Preceded by Cybersecurity Specialist Apprentice at the same firm.
 
 ---
 
-<div align="center">
+## Education & Certifications
 
-**Open to roles in: Cloud Security Engineering · GRC Engineering · Microsoft Purview · Data Privacy · Azure Security**
+**Northern Michigan University**
+B.S. Information Assurance / Cyber Defense
+B.S. Business Analytics
 
-[![Connect on LinkedIn](https://img.shields.io/badge/Connect%20on%20LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jayyoung14/)
+**Certifications**
+- Google Professional Cloud Security Engineer — 2024
+- Informatica Cloud Data Governance & Catalog (CDGC) Foundation Series — 2024
+- Microsoft Power BI Data Analyst Associate — 2023
 
-</div>
+---
 
+## Currently
+
+Deepening privacy engineering primitives — tokenization, alternate identifiers, and obfuscation patterns — and extending the policy-as-code library beyond NIST 800-53 into privacy-specific control sets.
+
+📍 Rochester Hills, MI · [LinkedIn](https://www.linkedin.com/in/jayyoung14)
