@@ -73,6 +73,7 @@ B.S. Business Analytics
 ## Currently
 
 - Preparing for the IAPP CIPT (Certified Information Privacy Technologist) certification
+- Building AI governance into my risk work: assessing AI risks such as staff use of public AI tools, and studying the NIST AI Risk Management Framework
 - Extending my control library beyond NIST 800-53 into privacy-specific control sets mapped to the NIST Privacy Framework
 
 📍 Rochester Hills, MI · [LinkedIn](https://www.linkedin.com/in/jayyoung14)
