@@ -1,26 +1,31 @@
 # Jay Young
 
-**GRC Privacy Technical Implementor** · Privacy Engineering · Policy-as-Code · Cloud Data Protection
+**IT & Cyber Risk Analyst** · Privacy GRC · Risk Assessment · Control Testing · Compliance-as-Code
 
-I turn privacy and regulatory requirements into technical controls that actually run — and into evidence that proves they ran. Four years across financial services and mortgage, currently at Ally Financial, building the layer between what Legal and Privacy commit to and what infrastructure enforces.
+I identify, assess, and reduce technology and privacy risk, then prove the controls work. Four years across financial services and mortgage, currently at Ally Financial, turning regulatory requirements (CCPA/CPRA, GLBA, GDPR) into tested controls and audit-ready evidence.
 
 > Policy should be code, controls should be auditable, and compliance should scale without scaling headcount.
 
 ---
 
-## What I implement
+## What I do
 
-**Data protection controls** — classification, masking, and access enforcement deployed as infrastructure rather than configured by hand. At UWM I shipped data masking and classification controls into GCP through Terraform; at Ally I work the privacy strategy and operations side of the same problem.
-
-**Policy-as-code** — control requirements encoded as Rego and enforced by a fail-closed CI gate, so a non-compliant plan cannot merge. Control IDs live next to the resources they govern, where they can't drift silently.
+**Risk assessment & risk registers** — scoping the organization, inventorying crown-jewel assets and personal-data flows, scoring inherent and residual risk on a defined method, and taking the decisions to leadership. See [`GLHB-Risk-Assessment`](https://github.com/JayYoungCareers/GLHB-Risk-Assessment).
 
 **Compliance evidence pipelines** — Terraform runs captured, hashed, signed, and written to immutable (WORM) storage, so the answer to "prove this control was enforced on this date" is a versioned artifact, not a screenshot.
 
 **Privacy program operations** — DPIA/PIA workflows, data inventory and lineage, retention and sharing standards, regulatory mapping across CCPA/CPRA, GLBA, and GDPR.
 
+**Data protection controls** — classification, masking, and access enforcement deployed as infrastructure rather than configured by hand. At UWM I shipped data masking and classification controls into GCP through Terraform; at Ally I work the privacy strategy and operations side of the same problem.
+
+**Policy-as-code** — control requirements encoded as Rego and enforced by a fail-closed CI gate, so a non-compliant plan cannot merge. Control IDs live next to the resources they govern, where they can't drift silently.
+
 ---
 
 ## Featured work
+
+### [`GLHB-Risk-Assessment`](https://github.com/JayYoungCareers/GLHB-Risk-Assessment) — Bank privacy & IT risk assessment
+End-to-end privacy and IT risk assessment of a fictional $3.2B community bank. 13 crown-jewel assets and 14 personal-data flows mapped, a 5x5 likelihood × impact method with written control credit rules, a 15-risk register with every credited control tied to NIST CSF 2.0, and a one-page executive summary with a 30/90/180-day roadmap.
 
 ### [`cgep-labs`](https://github.com/JayYoungCareers/cgep-labs) — Compliance controls as code
 NIST 800-53 controls (SC-28, AC-3, CM-6) implemented as Terraform primitives and reusable modules, enforced by Rego policies across **both AWS and GCP**, and gated in CI by Conftest. Includes an S3 Object Lock evidence vault with a capture-and-verify pipeline. Every control ID maps to a specific policy file and a passing test.
@@ -36,7 +41,7 @@ Terraform and GitHub Actions framework for deploying Microsoft 365 compliance po
 **Cloud** — AWS · Google Cloud · Azure
 **Privacy & governance** — Microsoft Purview (Information Protection, DLP, Compliance Manager) · Informatica CDGC · OneTrust · ServiceNow
 **Data** — SQL · Snowflake · Power BI
-**Frameworks** — NIST 800-53 rev5 · CCPA/CPRA · GLBA · GDPR · DPIA/PIA
+**Frameworks** — NIST CSF 2.0 · NIST Privacy Framework · NIST 800-53 rev5 · CCPA/CPRA · GLBA · GDPR · DPIA/PIA
 
 ---
 
