@@ -73,7 +73,6 @@ B.S. Business Analytics
 ## Currently
 
 - Preparing for the IAPP CIPT (Certified Information Privacy Technologist) certification
-- Connecting privacy engineering controls like tokenization, alternate identifiers, and obfuscation back to the privacy risks they reduce, so each control has a clear reason to exist and a way to test it
 - Extending my control library beyond NIST 800-53 into privacy-specific control sets mapped to the NIST Privacy Framework
 
 📍 Rochester Hills, MI · [LinkedIn](https://www.linkedin.com/in/jayyoung14)
