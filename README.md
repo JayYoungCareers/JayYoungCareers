@@ -35,13 +35,13 @@ Terraform and GitHub Actions framework for deploying Microsoft 365 compliance po
 
 ---
 
-## Tech
+## Skills & tools
 
-**Policy & IaC** — Terraform · Rego / OPA · Conftest · Checkov · GitHub Actions · PowerShell · Python · Bash
-**Cloud** — AWS · Google Cloud · Azure
-**Privacy & governance** — Microsoft Purview (Information Protection, DLP, Compliance Manager) · Informatica CDGC · OneTrust · ServiceNow
-**Data** — SQL · Snowflake · Power BI
-**Frameworks** — NIST CSF 2.0 · NIST Privacy Framework · NIST 800-53 rev5 · CCPA/CPRA · GLBA · GDPR · DPIA/PIA
+- **Risk & compliance** — IT and privacy risk assessment · risk registers · control testing and audit evidence · third-party risk · DPIA/PIA · data inventory and lineage
+- **Frameworks & regulations** — NIST CSF 2.0 · NIST Privacy Framework · NIST 800-53 rev5 · GLBA · CCPA/CPRA · GDPR
+- **GRC & privacy platforms** — OneTrust · ServiceNow · Microsoft Purview (Information Protection, DLP, Compliance Manager) · Informatica CDGC
+- **Data & reporting** — SQL · Snowflake · Power BI
+- **Cloud & automation** — AWS · Google Cloud · Azure · Terraform · Rego / OPA · Conftest · Checkov · GitHub Actions · Python · PowerShell · Bash
 
 ---
 
